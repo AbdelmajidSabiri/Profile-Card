@@ -71,10 +71,48 @@ body{
     justify-content: center;
     height: 35px;
     width: 35px;
-    font-size: 20px;
+    font-size: 24px;
     border-radius: 50%;
     background-color: #4267b2;
     color : white;
     margin: 0 8px;
     text-decoration: none;
+}
+
+.profile-card .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.buttons .button {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+    border-radius: 18px;
+    background-size: 100% auto;
+    font-size: 15px;
+    padding: 0.4em 1.6em;
+    cursor: pointer;
+    
+}
+   
+button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+}
+   
+@keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #05bada66;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
 }
